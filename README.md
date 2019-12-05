@@ -6,7 +6,7 @@ The project is still in development.
 
 ## Installation
 
-You will find the binary packages in the /dist folder inside each version of Nebulas. For example, the current version is Nebulas Nova, so you will find the packages [here](Nova/dist).
+You will find an index for the binary packages in the /dist folder inside each version of Nebulas. For example, the current version is Nebulas Nova, so you will find the index for the packages [here](Nova/dist).
 
 ### AppImage
 
@@ -18,25 +18,12 @@ You need to download the .appimage, set the permissions to +x, and launch it.
 
 The current version of Nebulas is Nebulas Nova.
 
-You can download the appimage just by [clicking here](https://arielbecker.com/assets/NebulasNova.AppImage).
+Open a console, then type the following:
 
-#### Installing
-
-There's no need to _install_ anything. You only need to set the file permissions to +x (executable).
-
-In your desktop, open the folder where you have the .appimage. Copy the location (usually you can achieve this by pressing at the same time _CTRL_ and _L_, then _CTRL_ and _C_.
-
-Now, open a console (or terminal). Write the following:
-
-    cd (paste here the location you've copied before).
-
-To paste the location, you usually need to press _CTRL_, _SHIFT_, and _P_ together.
-
-Then, write the following (assuming your appimage file is NebulasNova.AppImage):
-
+    mkdir ~/Nebulas
+    cd ~/Nebulas
+    wget https://arielbecker.com/assets/NebulasNova.AppImage
     chmod +x NebulasNova.AppImage
-
-Done! Do not close the console yet. You'll need it for the next step.
 
 #### Launching
 
@@ -44,11 +31,15 @@ Now, the only thing you need to do is launch the process. This can be achieved a
 
     ./NebulasNova.AppImage
 
-The first time you launch the .appimage, you'll see it copies several files to your user folder, then it launches the **neb** binary.
+The first time you launch the .appimage, you'll see it copies several files to your user folder. Those are config files needed to run the binary. It will end without launching Nebulas.
 
 If everything's done right, you'll see something like this:
 
 ![Screenshot of the .appimage launching](screenshot1.png)
+
+To do so, you just need to launch the script again, as follows:
+
+    ./NebulasNova.AppImage
 
 By launching it a second time, you'll have a prompt asking you to choose between four choices:
 
