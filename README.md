@@ -2,7 +2,7 @@
 
 This repository contains a tarball containing the pre-compiled neb binary, along with the scripts needed to run your node, and a copy of the web wallet.
 
-Also, there's a magnet link to download a .ova (virtual machine appliance), in case you want to run it _sandboxed_ or in other environments such as Windows.
+Also, there's a magnet link to download a .ova (virtual machine appliance), in case you want to run it _sandboxed_ or in other environments such as Windows, and a new tarball containing [just the precompiled neb binary](dist/neb.tar.gz).
 
 ## Tarball
 
